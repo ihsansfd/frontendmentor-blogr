@@ -26,3 +26,9 @@ $prefix: blogr-;
   --#{$prefix}very-dark-gray-blue: #{$very-dark-gray-blue};
   --#{$prefix}very-dark-desatured-blue: #{$very-dark-desatured-blue};
 }
+
+// ######## Site URL #########
+// for development as the absolute path can be different with the server
+
+$site-url: "https://ihsansfd.github.io/frontendmentor-blogr"
+

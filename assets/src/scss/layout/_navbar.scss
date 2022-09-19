@@ -10,7 +10,7 @@
   right: 0;
   font-weight: 600;
   --bs-navbar-nav-link-padding-x: 1rem;
-  --bs-navbar-toggler-icon-bg: url("/assets/build/images/icon-hamburger.svg");
+  --bs-navbar-toggler-icon-bg: url("#{var.$site-url}/assets/build/images/icon-hamburger.svg");
 
   &__navbar-collapse {
     background-color: var(--bs-white);
@@ -67,7 +67,7 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      background-image: url("/assets/build/images/icon-arrow-dark.svg");
+      background-image: url("#{var.$site-url}/assets/build/images/icon-arrow-dark.svg");
 
       @include bs.media-breakpoint-up(lg) {
         position: absolute;
@@ -75,7 +75,7 @@
         top: 50%;
         right: 0;
         transform: translateY(-30%);
-        background-image: url("/assets/build/images/icon-arrow-light.svg");
+        background-image: url("#{var.$site-url}/assets/build/images/icon-arrow-light.svg");
       }
     }
   }

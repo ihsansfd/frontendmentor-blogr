@@ -21614,7 +21614,7 @@ body {
   right: 0;
   font-weight: 600;
   --bs-navbar-nav-link-padding-x: 1rem;
-  --bs-navbar-toggler-icon-bg: url("/assets/build/images/icon-hamburger.svg");
+  --bs-navbar-toggler-icon-bg: url("https://ihsansfd.github.io/frontendmentor-blogr/assets/build/images/icon-hamburger.svg");
 }
 .site-navbar__navbar-collapse {
   background-color: var(--bs-white);
@@ -21667,7 +21667,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/assets/build/images/icon-arrow-dark.svg");
+  background-image: url("https://ihsansfd.github.io/frontendmentor-blogr/assets/build/images/icon-arrow-dark.svg");
 }
 @media (min-width: 992px) {
   .site-navbar__nav-link-dropdown::after {
@@ -21676,7 +21676,7 @@ body {
     top: 50%;
     right: 0;
     transform: translateY(-30%);
-    background-image: url("/assets/build/images/icon-arrow-light.svg");
+    background-image: url("https://ihsansfd.github.io/frontendmentor-blogr/assets/build/images/icon-arrow-light.svg");
   }
 }
 .site-navbar__dropdown-menu {
@@ -21912,13 +21912,13 @@ body {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-image: url("/assets/build/images/illustration-editor-mobile.svg");
+  background-image: url("https://ihsansfd.github.io/frontendmentor-blogr/assets/build/images/illustration-editor-mobile.svg");
   background-size: contain;
   background-position: center;
 }
 @media (min-width: 992px) {
   .cta-section-1__bg-image {
-    background-image: url("/assets/build/images/illustration-editor-desktop.svg");
+    background-image: url("https://ihsansfd.github.io/frontendmentor-blogr/assets/build/images/illustration-editor-desktop.svg");
     background-size: 60% auto;
     position: absolute;
     background-position: 150% 8rem;
@@ -22045,13 +22045,13 @@ body {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-image: url("/assets/build/images/illustration-laptop-mobile.svg");
+  background-image: url("https://ihsansfd.github.io/frontendmentor-blogr/assets/build/images/illustration-laptop-mobile.svg");
   background-size: contain;
   background-position: center;
 }
 @media (min-width: 992px) {
   .cta-section-3__bg-image {
-    background-image: url("/assets/build/images/illustration-laptop-desktop.svg");
+    background-image: url("https://ihsansfd.github.io/frontendmentor-blogr/assets/build/images/illustration-laptop-desktop.svg");
     background-size: 60% auto;
     position: absolute;
     background-position: -43% 8rem;

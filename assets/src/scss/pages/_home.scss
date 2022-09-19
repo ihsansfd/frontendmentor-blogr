@@ -4,6 +4,7 @@
 
 @use "../abstracts/mixins" as mix;
 @use "../custom/custom_bootstrap" as bs;
+@use "../abstracts/variables" as var;
 
 .cta-section {
   font-family: "Overpass", sans-serif;
@@ -11,8 +12,6 @@
     max-width: 32rem;
     margin-left: auto;
     margin-right: auto;
-    // border: 5px solid black;
-
     padding-bottom: 4rem;
 
     @include bs.media-breakpoint-up(lg) {
@@ -88,12 +87,12 @@
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-    background-image: url("/assets/build/images/illustration-editor-mobile.svg");
+    background-image: url("#{var.$site-url}/assets/build/images/illustration-editor-mobile.svg");
     background-size: contain;
     background-position: center;
 
     @include bs.media-breakpoint-up(lg) {
-      background-image: url("/assets/build/images/illustration-editor-desktop.svg");
+      background-image: url("#{var.$site-url}/assets/build/images/illustration-editor-desktop.svg");
       background-size: 60% auto;
       position: absolute;
       background-position: 150% 8rem;
@@ -213,12 +212,12 @@
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-    background-image: url("/assets/build/images/illustration-laptop-mobile.svg");
+    background-image: url("#{var.$site-url}/assets/build/images/illustration-laptop-mobile.svg");
     background-size: contain;
     background-position: center;
 
     @include bs.media-breakpoint-up(lg) {
-      background-image: url("/assets/build/images/illustration-laptop-desktop.svg");
+      background-image: url("#{var.$site-url}/assets/build/images/illustration-laptop-desktop.svg");
       background-size: 60% auto;
       position: absolute;
       background-position: -43% 8rem;
