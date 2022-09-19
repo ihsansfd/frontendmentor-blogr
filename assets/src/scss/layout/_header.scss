@@ -3,6 +3,7 @@
 // -----------------------------------------------------------------------------
 @use "../abstracts/mixins" as mix;
 @use "../custom/custom_bootstrap" as bs;
+@use "../abstracts/variables" as var;
 
 .site-header {
   position: relative;
@@ -44,7 +45,7 @@
   }
 
   &__bg-image {
-    background-image: url("/assets/build/images/bg-pattern-intro-mobile.svg");
+    background-image: url("#{var.$site-url}/assets/build/images/bg-pattern-intro-mobile.svg");
     background-repeat: no-repeat;
     background-position: -20rem -16rem;
     width: 100%;
@@ -53,7 +54,7 @@
 
     @include bs.media-breakpoint-up(lg) {
       background-position: -25rem -84rem;
-      background-image: url("/assets/build/images/bg-pattern-intro-desktop.svg");
+      background-image: url("#{var.$site-url}/assets/build/images/bg-pattern-intro-desktop.svg");
     }
   }
 }

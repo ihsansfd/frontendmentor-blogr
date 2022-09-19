@@ -21817,7 +21817,7 @@ body {
   transform: translate(-50%, -50%);
 }
 .site-header__bg-image {
-  background-image: url("/assets/build/images/bg-pattern-intro-mobile.svg");
+  background-image: url("https://ihsansfd.github.io/frontendmentor-blogr/assets/build/images/bg-pattern-intro-mobile.svg");
   background-repeat: no-repeat;
   background-position: -20rem -16rem;
   width: 100%;
@@ -21827,7 +21827,7 @@ body {
 @media (min-width: 992px) {
   .site-header__bg-image {
     background-position: -25rem -84rem;
-    background-image: url("/assets/build/images/bg-pattern-intro-desktop.svg");
+    background-image: url("https://ihsansfd.github.io/frontendmentor-blogr/assets/build/images/bg-pattern-intro-desktop.svg");
   }
 }
 
