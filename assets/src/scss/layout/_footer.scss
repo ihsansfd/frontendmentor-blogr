@@ -1,0 +1,36 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+@use "../abstracts/mixins" as mix;
+
+.site-footer {
+  background-color: var(--blogr-very-dark-black-blue);
+  padding-top: 5rem;
+//   padding-left: 10rem;
+//   padding-right: 10rem;
+  padding-bottom: 5rem;
+  font-size: 1rem;
+
+  @include mix.border-radius-one-sided("top-right");
+
+  &__brand {
+    font-size: 2.8rem;
+  }
+
+  &__widget-title {
+    font-size: inherit;
+    margin-bottom: 2rem;
+  }
+
+  &__menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__menu-item {
+    font-weight: 300;
+    color: var(--blogr-grayish-blue);
+    margin-bottom: 0.5rem;
+  }
+}

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="assets/build/css/main.css" />
+    <script
+      src="assets/build/js/bootstrap/js/bootstrap.bundle.js"
+      defer
+    ></script>
+    <script src="assets/build/js/custom/script.js" defer></script>
+
+    <title>Frontend Mentor | [Blogr]</title>
+  </head>
+  <body>
+    <header class="navbar-header">
+      <nav class="site-navbar navbar navbar-expand-lg">
+        <div class="container">
+          <a class="site-navbar__brand navbar-brand" href="#">Blogr</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="site-navbar__toggler-icon navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="site-navbar__navbar-collapse collapse navbar-collapse rounded"
+            id="navbarNavDropdown"
+          >
+            <ul class="ms-lg-4 site-navbar__navbar-nav navbar-nav">
+              <li class="site-navbar__nav-item nav-item dropdown">
+                <a
+                  class="site-navbar__nav-link site-navbar__nav-link-dropdown nav-link dropdown-toggle"
+                  aria-current="page"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Product</a
+                >
+                <ul class="site-navbar__dropdown-menu dropdown-menu">
+                  <li>
+                    <a class="site-navbar__dropdown-item dropdown-item" href="#"
+                      >Overview</a
+                    >
+                  </li>
+                  <li>
+                    <a class="site-navbar__dropdown-item dropdown-item" href="#"
+                      >Pricing</a
+                    >
+                  </li>
+                  <li>
+                    <a class="site-navbar__dropdown-item dropdown-item" href="#"
+                      >Marketplace</a
+                    >
+                  </li>
+                  <li>
+                    <a class="site-navbar__dropdown-item dropdown-item" href="#"
+                      >Features</a
+                    >
+                  </li>
+                  <li>
+                    <a class="site-navbar__dropdown-item dropdown-item" href="#"
+                      >Integrations</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="site-navbar__nav-item nav-item dropdown">
+                <a
+                  class="site-navbar__nav-link site-navbar__nav-link-dropdown nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Company</a
+                >
+                <ul class="site-navbar__dropdown-menu dropdown-menu">
+                  <li>
+                    <a class="site-navbar__dropdown-item dropdown-item" href="#"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a class="site-navbar__dropdown-item dropdown-item" href="#"
+                      >Team</a
+                    >
+                  </li>
+                  <li>
+                    <a class="site-navbar__dropdown-item dropdown-item" href="#"
+                      >Blog</a
+                    >
+                  </li>
+                  <li>
+                    <a class="site-navbar__dropdown-item dropdown-item" href="#"
+                      >Careers</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="site-navbar__nav-item nav-item dropdown">
+                <a
+                  class="site-navbar__nav-link site-navbar__nav-link-dropdown nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Connect</a
+                >
+                <ul class="site-navbar__dropdown-menu dropdown-menu">
+                  <li>
+                    <a class="site-navbar__dropdown-item dropdown-item" href="#"
+                      >Contact</a
+                    >
+                  </li>
+                  <li>
+                    <a class="site-navbar__dropdown-item dropdown-item" href="#"
+                      >Newsletter</a
+                    >
+                  </li>
+                  <li>
+                    <a class="site-navbar__dropdown-item dropdown-item" href="#"
+                      >LinkedIn</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <hr class="site-navbar__seperator" />
+            <div class="site-navbar__buttons ms-auto">
+              <a
+                href="#"
+                class="site-navbar__button site-navbar__login-button text-white btn btn-lg px-4 d-block d-lg-inline-block mb-2 mb-lg-0"
+                role="button"
+                >Login</a
+              >
+              <a
+                href="#"
+                class="site-navbar__button site-navbar__signup-button blogr-btn--white btn btn-lg px-4 d-block d-lg-inline-block mx-auto"
+                role="button"
+                >Sign Up</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <header class="site-header">
+        <div class="site-header__branding text-center text-white mx-auto">
+          <h2 class="site-header__title">A modern publishing platform</h2>
+          <h5 class="site-header__description">
+            Grow your audience and build your online brand
+          </h5>
+
+          <div
+            class="site-header__buttons-cta pt-5 d-flex justify-content-center gap-3"
+          >
+            <a
+              href="#"
+              class="site-header__button blogr-btn--white btn btn-lg"
+              role="button"
+              >Start for Free</a
+            >
+            <a
+              href="#"
+              class="site-header__button blogr-btn-outline--white btn btn-lg"
+              role="button"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <div class="site-header__bg-image-wrapper">
+          <div class="site-header__bg-image"></div>
+        </div>
+      </header>
+      <section id="cta-section-1" class="cta-section-1 cta-section">
+        <div class="container text-center text-lg-start">
+          <h3 class="cta-section-1__title cta-title text-center">
+            Designed for the future
+          </h3>
+          <div class="cta-section-1__bg-image-wrapper">
+            <div class="cta-section-1__bg-image"></div>
+          </div>
+          <div
+            class="cta-section-1__message-wrapper-1 cta-section__message-wrapper"
+          >
+            <div>
+              <h4 class="cta-section-1__subtitle cta-subtitle">
+                Introducing an extensible editor
+              </h4>
+
+              <p
+                class="cta-section-1__description cta-section__description--muted"
+              >
+                Blogr features an exceedingly intuitive interface which lets you
+                focus on one thing: creating content. The editor supports
+                management of multiple blogs and allows easy manipulation of
+                embeds such as images, videos, and Markdown. Extensibility with
+                plugins and themes provide easy ways to add functionality or
+                change the looks of a blog.
+              </p>
+            </div>
+          </div>
+          <div
+            class="cta-section-1__message-wrapper-2 cta-section__message-wrapper"
+          >
+            <div>
+              <h4 class="cta-section-1__subtitle cta-subtitle">
+                Robust content management
+              </h4>
+
+              <p
+                class="cta-section-1__description cta-section__description--muted"
+              >
+                Flexible content management enables users to easily move through
+                posts. Increase the usability of your blog by adding customized
+                categories, sections, format, or flow. With this functionality,
+                you’re in full control.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta-section-2" class="cta-section-2 cta-section">
+        <div class="cta-section-2__bg-wrapper-1">
+          <img
+            src="assets/build/images/illustration-phones.svg"
+            class="cta-section-2__bg-image-1"
+          />
+        </div>
+        <div class="cta-section-2__bg-wrapper-2">
+          <img
+            src="assets/build/images/bg-pattern-circles.svg"
+            class="cta-section-2__bg-image-2"
+          />
+        </div>
+        <div class="cta-section__container container text-center text-lg-start">
+          <div
+            class="cta-section-2__message-wrapper cta-section__message-wrapper ms-auto"
+          >
+            <h3
+              class="cta-section-2__title cta-title--white text-center text-lg-start"
+            >
+              State of the Art Infrastructure
+            </h3>
+            <p class="cta-section-2__description cta-section__description">
+              With reliability and speed in mind, worldwide data centers provide
+              the backbone for ultra-fast connectivity. This ensures your site
+              will load instantly, no matter where your readers are, keeping
+              your site competitive.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta-section-3" class="cta-section-3 cta-section">
+        <div class="cta-section-3__bg-image-wrapper">
+          <div class="cta-section-3__bg-image"></div>
+        </div>
+        <div class="cta-section__container container text-center text-lg-start">
+          <div
+            class="cta-section-3__message-wrapper cta-section__message-wrapper ms-auto"
+          >
+            <h3
+              class="cta-section-3__subtitle cta-subtitle text-center text-lg-start"
+            >
+              Free, open, simple
+            </h3>
+            <p class="cta-section-3__description cta-section__description">
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as code
+              syntax highlighting, RSS feeds, social media integration,
+              third-party commenting tools, and works seamlessly with Google
+              Analytics. The architecture is clean and is relatively easy to
+              learn.
+            </p>
+          </div>
+          <div
+            class="cta-section-3__message-wrapper cta-section__message-wrapper ms-auto"
+          >
+            <h3
+              class="cta-section-3__subtitle cta-subtitle text-center text-lg-start"
+            >
+              Powerful tooling
+            </h3>
+            <p class="cta-section-3__description cta-section__description">
+              Batteries included. We built a simple and straightforward CLI tool
+              that makes customization and deployment a breeze, but capable of
+              producing even the most complicated sites.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer" class="site-footer">
+      <div class="container">
+        <div class="row justify-content-start gy-5 text-center text-md-start">
+          <div class="col-lg-3 col-md-6">
+            <div class="site-footer__widget">
+              <h4 class="site-footer__brand logo-text text-white">Blogr</h4>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="site-footer__widget">
+              <h5 class="site-footer__widget-title text-white">Product</h5>
+              <ul class="site-footer__menu">
+                <li class="site-footer__menu-item">Overview</li>
+                <li class="site-footer__menu-item">Pricing</li>
+                <li class="site-footer__menu-item">Marketplace</li>
+                <li class="site-footer__menu-item">Features</li>
+                <li class="site-footer__menu-item">Integrations</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="site-footer__widget">
+              <h5 class="site-footer__widget-title text-white">Company</h5>
+              <ul class="site-footer__menu">
+                <li class="site-footer__menu-item">About</li>
+                <li class="site-footer__menu-item">Team</li>
+                <li class="site-footer__menu-item">Blog</li>
+                <li class="site-footer__menu-item">Careers</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="site-footer__widget">
+              <h5 class="site-footer__widget-title text-white">Connect</h5>
+              <ul class="site-footer__menu">
+                <li class="site-footer__menu-item">Contact</li>
+                <li class="site-footer__menu-item">Newsletter</li>
+                <li class="site-footer__menu-item">LinkedIn</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

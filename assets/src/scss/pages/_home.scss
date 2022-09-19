@@ -1,0 +1,231 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+@use "../abstracts/mixins" as mix;
+@use "../custom/custom_bootstrap" as bs;
+
+.cta-section {
+  font-family: "Overpass", sans-serif;
+  &__message-wrapper {
+    max-width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+    // border: 5px solid black;
+
+    padding-bottom: 4rem;
+
+    @include bs.media-breakpoint-up(lg) {
+      margin-left: initial;
+      margin-right: initial;
+    }
+  }
+
+  &__container {
+    position: relative;
+    z-index: 3;
+  }
+
+  &__description {
+    font-weight: 300;
+    letter-spacing: 0.04rem;
+    &--muted {
+      color: var(--blogr-very-dark-grayish-blue);
+      @extend .cta-section__description;
+    }
+  }
+  .cta-title {
+    font-size: 1.6rem;
+    color: var(--blogr-very-dark-desatured-blue);
+    @include bs.media-breakpoint-up(lg) {
+      font-size: 2.2rem;
+    }
+
+    &--white {
+      @extend .cta-title;
+      color: var(--bs-white);
+    }
+  }
+
+  .cta-subtitle {
+    font-size: 1.6rem;
+    color: var(--blogr-very-dark-desatured-blue);
+    &--white {
+      @extend .cta-subtitle;
+      color: var(--bs-white);
+    }
+  }
+
+  .cta-subtitle {
+    margin-bottom: 1rem;
+  }
+}
+
+.cta-section-1 {
+  position: relative;
+  padding-top: 8rem;
+  padding-bottom: 20rem;
+
+  &__title {
+    margin-bottom: 3rem;
+    @include bs.media-breakpoint-up(lg) {
+      margin-bottom: 5.5rem;
+    }
+  }
+
+  &__bg-image-wrapper {
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 3rem;
+    @include bs.media-breakpoint-up(lg) {
+      position: absolute;
+      @include mix.center-element-absolute;
+      height: 100%;
+    }
+  }
+
+  &__bg-image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url("/assets/build/images/illustration-editor-mobile.svg");
+    background-size: contain;
+    background-position: center;
+
+    @include bs.media-breakpoint-up(lg) {
+      background-image: url("/assets/build/images/illustration-editor-desktop.svg");
+      background-size: 60% auto;
+      position: absolute;
+      background-position: 150% 8rem;
+    }
+    @include bs.media-breakpoint-up(xl) {
+      background-size: auto;
+      background-position: 150% 4rem;
+    }
+  }
+}
+
+.cta-section-2 {
+  background-color: var(--blogr-very-dark-gray-blue);
+  padding-top: 15rem;
+  @include mix.border-radius-one-sided("bottom-left");
+  @include mix.border-radius-one-sided("top-right");
+
+  @include bs.media-breakpoint-up(lg) {
+    padding-top: 6rem;
+  }
+  padding-bottom: 5rem;
+  position: relative;
+  &__message-wrapper {
+    color: var(--blogr-grayish-blue);
+  }
+
+  &__bg-wrapper-1 {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    height: 100%;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+
+    @include bs.media-breakpoint-up(lg) {
+      width: 50%;
+    }
+  }
+
+  &__bg-image-1 {
+    height: 23rem;
+    width: auto;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -45%);
+
+    @include bs.media-breakpoint-up(lg) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -48%);
+      height: 25rem;
+    }
+
+    @include bs.media-breakpoint-up(xl) {
+      height: 30rem;
+    }
+  }
+
+  &__bg-wrapper-2 {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    @include mix.border-radius-one-sided("top-right");
+
+    @include bs.media-breakpoint-up(lg) {
+      width: 65%;
+    }
+  }
+
+  &__bg-image-2 {
+    height: 37rem;
+    width: auto;
+    object-fit: cover;
+    // display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -83%);
+
+    @include bs.media-breakpoint-up(lg) {
+      top: 50%;
+      left: -15rem;
+      transform: translate(0, -75%);
+      height: 70rem;
+    }
+
+    @include bs.media-breakpoint-up(xl) {
+      height: 70rem;
+    }
+  }
+}
+
+.cta-section-3 {
+  position: relative;
+  padding-top: 17rem;
+  padding-bottom: 18rem;
+
+  &__bg-image-wrapper {
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 3rem;
+    @include bs.media-breakpoint-up(lg) {
+      position: absolute;
+      @include mix.center-element-absolute;
+      height: 100%;
+    }
+  }
+
+  &__bg-image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url("/assets/build/images/illustration-laptop-mobile.svg");
+    background-size: contain;
+    background-position: center;
+
+    @include bs.media-breakpoint-up(lg) {
+      background-image: url("/assets/build/images/illustration-laptop-desktop.svg");
+      background-size: 60% auto;
+      position: absolute;
+      background-position: -43% 8rem;
+    }
+    @include bs.media-breakpoint-up(xl) {
+      background-size: auto;
+      background-position: -53% 4rem;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+@mixin border-radius-one-sided($position) {
+  $depth: 6.25rem;
+  @if ($position == "top-left") {
+    border-top-left-radius: $depth;
+  }
+
+  @if ($position == "top-right") {
+    border-top-right-radius: $depth;
+  }
+
+  @if ($position == "bottom-right") {
+    border-bottom-right-radius: $depth;
+  }
+
+  @if ($position == "bottom-left") {
+    border-bottom-left-radius: $depth;
+  }
+}
+
+@mixin primary-gradient($direction: to right) {
+  background-image: linear-gradient(
+    $direction,
+    var(--blogr-very-light-red),
+    var(--blogr-light-red)
+  );
+}
+
+@mixin center-element-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

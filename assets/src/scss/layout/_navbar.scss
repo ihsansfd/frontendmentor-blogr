@@ -1,0 +1,150 @@
+@use "../custom/custom_bootstrap" as bs;
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+.site-navbar {
+  position: absolute;
+  z-index: 3;
+  top: 2rem;
+  left: 0;
+  right: 0;
+  font-weight: 600;
+  --bs-navbar-nav-link-padding-x: 1rem;
+  --bs-navbar-toggler-icon-bg: url("/assets/build/images/icon-hamburger.svg");
+
+  &__navbar-collapse {
+    background-color: var(--bs-white);
+    text-align: center;
+    padding: 2rem;
+    box-shadow: bs.$box-shadow-lg;
+
+    @include bs.media-breakpoint-up(lg) {
+      background-color: unset;
+      box-shadow: unset;
+    }
+  }
+
+  &__brand {
+    color: var(--bs-white);
+    font-size: 2rem;
+  }
+
+  &__nav-link {
+    font-weight: 500;
+    --bs-nav-link-color: var(--blogr-very-dark-grayish-blue);
+    --bs-nav-link-hover-color: var(--bs-nav-link-color);
+
+    font-size: 1.1rem;
+    padding: 1rem;
+    @include bs.media-breakpoint-up(lg) {
+      --bs-nav-link-color: var(--bs-white);
+
+      font-size: 1rem;
+      padding: initial;
+    }
+
+    &:hover,
+    &:active {
+      @include bs.media-breakpoint-up(lg) {
+        color: var(--bs-white);
+      }
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__nav-link-dropdown {
+    position: relative;
+
+    &::after {
+      border: unset;
+      display: inline-block;
+      position: absolute;
+      padding: 0.25rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("/assets/build/images/icon-arrow-dark.svg");
+
+      @include bs.media-breakpoint-up(lg) {
+        position: absolute;
+        display: block;
+        top: 50%;
+        right: 0;
+        transform: translateY(-30%);
+        background-image: url("/assets/build/images/icon-arrow-light.svg");
+      }
+    }
+  }
+
+  &__dropdown-menu {
+    padding: 1.5rem 0.9rem !important;
+    --bs-dropdown-bg: #{rgba(var.$grayish-blue, 0.3)};
+    --bs-dropdown-border-color: unset;
+    --bs-dropdown-spacer: 1rem;
+    @include bs.media-breakpoint-up(lg) {
+      box-shadow: bs.$box-shadow-lg;
+      --bs-dropdown-bg: var(--bs-white);
+    }
+  }
+
+  &__dropdown-item {
+    font-weight: 400;
+    text-align: center;
+
+    @include bs.media-breakpoint-up(lg) {
+      text-align: start;
+    }
+
+    &:hover {
+      font-weight: 600;
+      background-color: inherit;
+    }
+
+    &:active {
+      color: inherit;
+    }
+  }
+
+  &__buttons-wrapper {
+    width: max-content;
+  }
+
+  &__button {
+    font-weight: 500;
+    @include bs.media-breakpoint-up(lg) {
+      font-weight: 600;
+    }
+  }
+
+  &__login-button {
+    color: var(--blogr-very-dark-desatured-blue) !important;
+    @include bs.media-breakpoint-up(lg) {
+      margin-right: 1rem;
+      color: var(--bs-white) !important;
+    }
+  }
+
+  &__signup-button {
+    @include mix.primary-gradient;
+    width: max-content;
+    color: var(--bs-white);
+    @include bs.media-breakpoint-up(lg) {
+      background-image: unset;
+      color: var(--bs-primary);
+    }
+  }
+
+  &__seperator {
+    @include bs.media-breakpoint-up(lg) {
+      display: none;
+    }
+  }
+
+  &__toggler-icon {
+    transition: 600ms ease;
+  }
+}

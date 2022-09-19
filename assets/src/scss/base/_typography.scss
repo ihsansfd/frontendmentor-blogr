@@ -1,0 +1,10 @@
+/**
+ * Basic typography style for copy text
+ */
+
+@use "../custom";
+
+body {
+  font-size: 16px;
+  font-family: custom.$font-family-sans-serif;
+}

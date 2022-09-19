@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+@use "sass:color";
+
+.blogr-btn {
+  --bs-btn-border-radius: var(--bs-border-radius-pill);
+  &--white {
+    @extend .blogr-btn;
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: var(--blogr-primary-light);
+    --bs-btn-bg: var(--bs-white);
+    --bs-btn-color: var(--bs-primary);
+  }
+}
+
+.blogr-btn-outline {
+  --bs-btn-border-radius: var(--bs-border-radius-pill);
+  &--white {
+    @extend .blogr-btn-outline;
+    --bs-btn-border-color: var(--bs-white);
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-hover-bg: var(--bs-white);
+    --bs-btn-hover-color: var(--bs-primary);
+  }
+}

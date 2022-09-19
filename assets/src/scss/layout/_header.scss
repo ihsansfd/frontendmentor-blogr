@@ -1,0 +1,59 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+@use "../abstracts/mixins" as mix;
+@use "../custom/custom_bootstrap" as bs;
+
+.site-header {
+  position: relative;
+  min-height: 35rem;
+  @include mix.border-radius-one-sided("bottom-left");
+  @include mix.primary-gradient;
+  overflow: hidden;
+
+  &__branding {
+    position: absolute;
+    padding-top: 4rem;
+    width: 85%;
+    z-index: 2;
+    @include mix.center-element-absolute;
+
+    @include bs.media-breakpoint-up(lg) {
+      width: 60rem;
+    }
+  }
+
+  &__title {
+    font-size: 2.1rem;
+    @include bs.media-breakpoint-up(lg) {
+      font-size: 4rem;
+    }
+  }
+
+  &__description {
+    font-weight: 300;
+  }
+
+  &__bg-image-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    @include mix.center-element-absolute;
+  }
+
+  &__bg-image {
+    background-image: url("/assets/build/images/bg-pattern-intro-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: -20rem -16rem;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    @include bs.media-breakpoint-up(lg) {
+      background-position: -25rem -84rem;
+      background-image: url("/assets/build/images/bg-pattern-intro-desktop.svg");
+    }
+  }
+}

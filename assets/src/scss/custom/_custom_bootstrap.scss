@@ -1,0 +1,52 @@
+// This file is used to override vendors variables and any other default values
+
+// ######## Override Bootstrap variables #########
+
+@use "../vendors/bootstrap/bootstrap.scss" as bs;
+
+$primary: rgb(255, 82, 93);
+$secondary: hsl(208, 49%, 24%);
+
+$white: hsl(0, 0%, 100%);
+
+$font-family-sans-serif: "Ubuntu", system-ui, -apple-system, "Segoe UI", Roboto,
+  "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$headings-font-family: "Overpass", system-ui, -apple-system, "Segoe UI", Roboto,
+  "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$headings-font-weight: 600;
+
+$font-weight-lighter: 300;
+$font-weight-light: 400;
+$font-weight-normal: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
+
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 3.052;
+$h2-font-size: $font-size-base * 2.441;
+$h3-font-size: $font-size-base * 1.953;
+$h4-font-size: $font-size-base * 1.563;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+$btn-padding-y-lg: 0.5rem;
+$btn-padding-x-lg: 0.9rem;
+$btn-font-size-lg: $font-size-base * 1.15;
+
+$btn-font-weight: 600;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1220px,
+);
+
+// Your vendor files
+@import "../vendors/bootstrap/bootstrap.scss";

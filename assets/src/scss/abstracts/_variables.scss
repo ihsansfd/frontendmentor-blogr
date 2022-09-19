@@ -1,0 +1,28 @@
+// ######## Custom variables #########
+
+$grayish-blue: rgb(200, 200, 203);
+$very-dark-grayish-blue: hsl(207, 13%, 34%);
+$very-dark-black-blue: hsl(240, 10%, 16%);
+$primary-light: hsl(355, 100%, 74%);
+
+// Gradient
+$very-light-red: hsl(13, 100%, 72%);
+$light-red: hsl(353, 100%, 62%);
+
+// Background Gradient
+$very-dark-gray-blue: hsl(237, 17%, 21%);
+$very-dark-desatured-blue: hsl(237, 23%, 32%);
+
+// ######### Custom properties ##########
+$prefix: blogr-;
+
+:root {
+  --#{$prefix}grayish-blue: #{$grayish-blue};
+  --#{$prefix}very-dark-grayish-blue: #{$very-dark-grayish-blue};
+  --#{$prefix}very-dark-black-blue: #{$very-dark-black-blue};
+  --#{$prefix}primary-light: #{$primary-light};
+  --#{$prefix}very-light-red: #{$very-light-red};
+  --#{$prefix}light-red: #{$light-red};
+  --#{$prefix}very-dark-gray-blue: #{$very-dark-gray-blue};
+  --#{$prefix}very-dark-desatured-blue: #{$very-dark-desatured-blue};
+}
